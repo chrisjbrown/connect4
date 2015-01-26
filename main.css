@@ -1,0 +1,53 @@
+
+body {
+  height: 100%;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+video {
+  width: 200px;
+  height:200px;
+  display:inline-block;
+}
+
+.game-area {
+  margin: 0 auto;
+}
+
+.column {
+  display: inline-block;
+  list-style: none;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 75px;
+  height: 300px;
+  padding: 0;
+  position: relative;
+}
+
+.column:last-of-type {
+  border-right: 1px solid black;
+}
+
+.column:hover {
+  background-color: #f2eaea;
+  cursor: pointer;
+}
+
+.column li {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 12.5px;
+  bottom: 0;
+  position: absolute;
+}
+
+.column li.p1 {
+  background-color: red;
+}
+
+.column li.p2 {
+  background-color: blue;
+}
